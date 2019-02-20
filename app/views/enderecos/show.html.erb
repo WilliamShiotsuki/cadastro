@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @endereco.cpf %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @endereco.endereco %>
+</p>
+
+<p>
+  <strong>Cep:</strong>
+  <%= @endereco.cep %>
+</p>
+
+<p>
+  <strong>Bairro:</strong>
+  <%= @endereco.bairro %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @endereco.cidade %>
+</p>
+
+<p>
+  <strong>Uf:</strong>
+  <%= @endereco.uf %>
+</p>
+
+<p>
+  <strong>Pais:</strong>
+  <%= @endereco.pais %>
+</p>
+
+<%= link_to 'Editar', edit_endereco_path(@endereco) %> |
+<%= link_to 'Voltar', enderecos_path %>
