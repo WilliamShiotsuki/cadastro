@@ -55,13 +55,14 @@ footer{
 
 body{
     text-align: center;
-    background-color: rgb(8, 212, 144);
+    background-color: rgb(167, 129, 185);
     border:blue;
 }
 
 h1 { 
     text-align: center;
-    color: blue;
+    color: rgb(109, 8, 109);
+    font-style: italic;
 }
 
 tbody{
