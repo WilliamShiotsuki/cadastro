@@ -65,6 +65,12 @@ h1 {
     font-style: italic;
 }
 
+h3 { 
+    text-align: center;
+    color: rgb(4, 50, 53);
+    font-style: italic;
+}
+
 tbody{
     color: blue;
 }
