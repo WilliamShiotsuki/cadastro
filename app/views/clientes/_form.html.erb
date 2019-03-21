@@ -1,6 +1,6 @@
 <%= form_with(model: cliente, local: true) do |form| %>
   <% if cliente.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_msg"> #error_explanation
       <h2><%= pluralize(cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
 
       <ul>
@@ -8,31 +8,38 @@
         <li><%= message %></li>
       <% end %>
       </ul>
+
     </div>
   <% end %>
 
+ 
+  
 
-  <div class="field">
+<div class="cartao">
+<div>
+  
       <%= form.label :nome %>
       <%= form.text_field :nome %>
-  </div>
 
-  <div class="field">
+
       <%= form.label :cpf %> 
       <%= form.text_field :cpf %>
-  </div>    
 
-  <div class="field">
+
+
       <%= form.label :email %>
       <%= form.text_field :email %>
-  </div>
 
-  <div class="field">
-       <%= form.label :telefone %>
-       <%= form.text_field :telefone %> 
-  </div>
 
-  <div class="actions">
-    <%= form.submit "Salvar agora", class: "vai_william" %>
-  </div>
+
+      <%= form.label :telefone %>
+      <%= form.text_field :telefone %> 
+</div>
+
+
+<%= form.submit "Salvar agora", class: "botao" %>
+
+
+
+</div>
 <% end %>
